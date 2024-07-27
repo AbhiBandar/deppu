@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Deepu.</strong>
+                        <p>
+                            Deepu, Every time I see you, I am captivated by your beauty. Your smile lights up my world, and your eyes hold the stars that guide me through the darkest nights. You are the epitome of grace and charm, and my heart beats only for you.<br>
+                            <center>If yes please click on yes.</center>
+                            
+                        </p>
+                    </div>
+                     
+                </div>
+                
+            </div>
+            <div class="heart"></div>
+            <center><button class="external-button" onclick="window.location.href='ndex.html'">Yes</button></center>
+        </div>
+    </div>
+    
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+   
+</body>
+</html>
